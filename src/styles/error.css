@@ -1,14 +1,15 @@
 #bodyError{
-    height: 900px;
     width: 100%;
-    max-width: 1268px;
-    margin: auto;
-    border-radius: 0px;   
+    max-width: 1240px;
+    border-radius: 0px;  
+    display: flex;
 }
 #titleError {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    
 }
 
 #textError {
@@ -17,7 +18,7 @@
     max-width: 597px;
     font-size: 288px;
     font-weight: 700;
-    margin-top: 163px;
+    margin-top: 70px;
     margin-bottom: 0px;
 }
     

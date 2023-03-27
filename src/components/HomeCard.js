@@ -8,7 +8,7 @@ const HomeCard = ({ id, cover, title }) => {
     <div className="home-card">
       <li key={id} className="home-item">
         <img className="home-item-cover" src={cover} alt={`${title} cover`} />
-        <p className="titre">{title}</p>
+        <h3 className="titre">{title}</h3>
       </li>
     </div>
   );
