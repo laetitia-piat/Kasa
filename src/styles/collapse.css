@@ -18,6 +18,10 @@
     padding-left: 18px;
 }
 
+.collapse-txt {
+    width: 1023px;
+}
+
 .collapse-content {
     visibility: hidden;
     height: 0;
@@ -46,4 +50,8 @@
     height: 14px;
     width: 23px;
     float: right;
+}
+
+.open .image-collapse {
+    transform: rotate(180deg);
 }

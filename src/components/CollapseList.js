@@ -11,7 +11,7 @@ const CollapseList = () => {
   return (
     <div className={`body-collapse ${open && "open"}`}>
       <div className="collapse-title" onClick={handleClick}>
-        <p>
+        <p className="collapse-txt">
           Fiabilité <span className="image-collapse"> </span>
         </p>
       </div>
@@ -20,8 +20,8 @@ const CollapseList = () => {
         photos sont conformes aux logements, et toutes les informations sont
         régulièrement vérifiées par nos équipes.
       </div>
-      <div className="collapse-title">
-        <p>
+      <div className="collapse-title" onClick={handleClick}>
+        <p className="collapse-txt">
           Respect <span className="image-collapse"></span>
         </p>
       </div>
@@ -30,8 +30,8 @@ const CollapseList = () => {
         comportement discriminatoire ou de perturbation du voisinage entraînera
         une exclusion de notre plateforme.
       </div>
-      <div className="collapse-title">
-        <p>
+      <div className="collapse-title" onClick={handleClick}>
+        <p className="collapse-txt">
           Service <span className="image-collapse"></span>
         </p>
       </div>
@@ -40,8 +40,8 @@ const CollapseList = () => {
         expérience parfaite. N'hésitez pas à nous contacter si vous avez la
         moindre question.
       </div>
-      <div className="collapse-title">
-        <p>
+      <div className="collapse-title" onClick={handleClick}>
+        <p className="collapse-txt">
           Sécurité <span className="image-collapse"></span>
         </p>
       </div>

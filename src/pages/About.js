@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import BackgroundAboutImg from "../assets/backgroundAbout.png";
 import Banner from "../components/Banner";
 import CollapseList from "../components/CollapseList";
+import Test from "../components/Test";
 
 const About = () => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
       </Banner>
       <CollapseList />
       <Footer />
+      <Test />
     </div>
   );
 };
