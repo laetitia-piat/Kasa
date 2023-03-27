@@ -3,10 +3,16 @@ body {
     color: #FF6060;
     max-width: 1440px;
     width: 100%;
-    padding: 30px;
+    margin: auto;
 }
+
+#root {
+    margin: 0 100px 0 100px;
+}
+
 
 a {
     color: #FF6060;
+    text-decoration: none;
 }
 
