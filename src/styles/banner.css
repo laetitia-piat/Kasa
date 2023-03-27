@@ -1,0 +1,36 @@
+.banner {
+    height: 223px;
+    max-width: 1240px;
+    width: 100%;
+    left: 100px;
+    top: 171px;
+    border-radius: 25px;
+    display: flex;
+    align-content: center;
+    margin: auto;
+
+}
+.background-filter {
+    max-width: 1240px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+.image-background-home, .image-background-about {
+    max-width: 1240px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index:1;
+    background: #000000;
+    mix-blend-mode: darken;
+    border-radius: 25px;  
+}
+.text-background {
+    margin: auto;
+    z-index:3;
+    color: white;
+    font-size: 48px;
+    font-size: auto;
+}

@@ -1,0 +1,39 @@
+#bodyError{
+    height: 900px;
+    width: 100%;
+    max-width: 1268px;
+    margin: auto;
+    border-radius: 0px;   
+}
+#titleError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textError {
+    height: 263px;
+    width: 100%;
+    max-width: 597px;
+    font-size: 288px;
+    font-weight: 700;
+    margin-top: 163px;
+    margin-bottom: 0px;
+}
+    
+#oups{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    margin-top: 66px;
+
+}
+
+#lien {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-bottom: 159px;
+}
