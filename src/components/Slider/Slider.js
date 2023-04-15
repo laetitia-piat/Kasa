@@ -14,12 +14,9 @@ const Slider = () => {
   const nexSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
-
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-
-  if (!Array.isArray(datas.pictures) ? datas.pictures <= 0 : null);
 
   return (
     <div className="slider">
