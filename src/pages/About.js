@@ -1,26 +1,22 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import BackgroundAboutImg from "../assets/backgroundAbout.png";
-import Banner from "../components/Banner";
-import CollapseList from "../components/CollapseList";
-import Test from "../components/Test";
+import Banner from "../components/Banner/Banner";
+import liste from "../data/content-collapse.json";
+import Collapse from "../components/Collapse/Collapse";
+
 
 const About = () => {
+
+
   return (
-    <div>
-      <Header />
-      <Banner>
-        <img
-          className="image-background-about"
-          src={BackgroundAboutImg}
-          alt="background à propos"
-        />
-      </Banner>
-      <CollapseList />
-      <Footer />
-      <Test />
-    </div>
+    <>
+      <Banner image={BackgroundAboutImg} />
+      {liste.map(({ title, content}) => (
+        <Collapse key={title} title={title} content={content} />
+      ))
+      }
+  
+    </>
   );
 };
 
