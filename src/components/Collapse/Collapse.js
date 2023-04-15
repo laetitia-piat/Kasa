@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./collapse.css";
 
 const Collapse = ({ title, content }) => {
-
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -12,7 +11,8 @@ const Collapse = ({ title, content }) => {
   return (
     <div className={`collapseBodyOne ${open && "open"}`}>
       <div className="collapseTitle" onClick={handleClick}>
-        <p className="collapseTxt">{title}
+        <p className="collapseTxt">
+          {title}
           <span className="image-collapse"> </span>
         </p>
       </div>

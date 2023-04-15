@@ -21,8 +21,8 @@ const Accomodation = () => {
   //Création de la constante "équipemenent" pour récuperer le tableau des équipements et le gerer en liste
   const equipment = (
     <ul className="accEquipment">
-      {datas.equipments.map((equipment) => (
-        <li key={equipment.id}>{equipment}</li>
+      {datas.equipments.map((equipment, index) => (
+        <li key={index}>{equipment}</li>
       ))}
     </ul>
   );
@@ -30,8 +30,8 @@ const Accomodation = () => {
   //Création de la constante "tag" pour récuperer le tableau des tags et le gerer en liste
   const tag = (
     <ul className="accTag">
-      {datas.tags.map((tag) => (
-        <li key={tag.id} className="accTagOne">
+      {datas.tags.map((tag, index) => (
+        <li key={index} className="accTagOne">
           {tag}
         </li>
       ))}
