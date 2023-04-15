@@ -1,0 +1,124 @@
+.accomodationBody {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accomodationBody .collapseBodyOne {
+    margin: 0;
+    width: 45%;
+    display: block;
+}
+.accInfos {
+    display: flex;
+}
+.accTitle {
+    width: 70%;
+}
+
+.accTitle h2 {
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.accHost {
+    display: flex;
+    justify-content: flex-end;
+}
+.accStars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.accName {
+    max-width: 93px;
+    text-align : right;
+    align-items: center;
+}
+
+.accHost img {
+    border-radius: 90px;
+    max-width: 64px;
+    max-height: 64px;
+    margin-left: 10px;
+}
+
+.collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accTagsRating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.accEquipment {
+    margin: 0;
+    padding: 0;
+}
+
+.accTag {
+    display: flex;
+    max-width: 1240px;
+    width: 100%;
+    padding: 0;
+}
+
+.accTagOne {
+    width: 115px;
+    min-height: 25px;
+    text-align: center;
+    background:#FF6060 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+@media only screen and (max-width : 900px) {
+    .accTitle h2 {
+        font-size: 26px;
+     }
+}
+
+
+@media only screen and (max-width : 720px) {
+    .accTitle h2 {
+        font-size: 18px;
+     }
+    .accTitle {
+        width: 100%;
+    }
+    .collapse {
+       flex-direction: column;
+    }
+    .accomodationBody .collapseBodyOne {
+        width: 100%;
+    }
+    .accTagsRating {
+        flex-direction: row-reverse ;
+    }
+    .accHost img {
+        width: 32px;
+        height: 32px;
+    }
+    .accInfos {
+        flex-direction: column;
+    }
+    .accTagsRating {
+        width: 100%;
+        align-items: center;
+    }
+    .accTagOne {
+        width: 84px;
+        height: 18px;
+        font-size: 10px;
+    }
+   } 
