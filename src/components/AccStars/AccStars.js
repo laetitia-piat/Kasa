@@ -1,6 +1,7 @@
 import React from "react";
 import starFull from "../../assets/starFull.png";
 import starEmpty from "../../assets/starEmpty.png";
+import "../AccStars/accStars.css";
 
 const AccStars = (props) => {
   const starValue = props.starValue;
