@@ -25,11 +25,6 @@
     display: flex;
     justify-content: flex-end;
 }
-.accStars {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 
 .accName {
     max-width: 93px;
