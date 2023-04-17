@@ -39,14 +39,14 @@
 }
 .arrowR , .arrowL {
     position: absolute;
-}
-.arrowR img , .arrowL img {
     max-height: 79px;
     max-width: 46px;  
 }
+
 .arrowR {
    right: 0px;
 }
+
 .length {
     display: flex;
 }
@@ -56,13 +56,11 @@
         height: 380px ;
     }
 }
-
 @media only screen and (max-width : 900px) {
     .image {
         height: 340px ;
     }
 }
-
 @media only screen and (max-width : 720px) {
     .image {
         height: 255px ;
