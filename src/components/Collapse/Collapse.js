@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./collapse.css";
 
 const Collapse = ({ title, content }) => {
+  //creation du useState => pour l'ouverture et la fermeture du collapse > état de base > fermé
   const [open, setOpen] = useState(false);
-
+  //creation de la fonction pour l'ouverture du collapse au click
   const handleClick = () => {
     setOpen(!open);
   };

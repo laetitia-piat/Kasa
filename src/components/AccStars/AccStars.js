@@ -10,13 +10,17 @@ const AccStars = (props) => {
 
   return (
     <div>
-      {numberStar.map((rating, index) =>
-        //ajout d'une condition > si la starValue est superieur ou égale
-        starValue >= rating ? (
-          <img key={index} src={starFull} />
-        ) : (
-          <img key={index} src={starEmpty} />
-        )
+      {numberStar.map(
+        (
+          rating,
+          index //map le tableau numberStar
+        ) =>
+          //ajout d'une condition pour l'affichage des etoiles vides ou pleines
+          starValue >= rating ? (
+            <img key={index} src={starFull} />
+          ) : (
+            <img key={index} src={starEmpty} />
+          )
       )}
     </div>
   );
