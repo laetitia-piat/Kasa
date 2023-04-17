@@ -11,6 +11,7 @@ const AccStars = (props) => {
   return (
     <div>
       {numberStar.map((rating, index) =>
+        //ajout d'une condition > si la starValue est superieur ou égale
         starValue >= rating ? (
           <img key={index} src={starFull} />
         ) : (
