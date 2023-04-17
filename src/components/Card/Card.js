@@ -1,30 +1,16 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import homeData from "../../data/home.json";
-import "./Card.css";
+import { Link } from "react-router-dom";
 
-const Card = () => {
-  const navigate = useNavigate();
-
-  function handleclick(id) {
-    navigate("/accomodation/" + id);
-  }
-
+const Card = (props) => {
   return (
-    <div className="accomodations">
-      {homeData &&
-        homeData.map((data, index) => (
-          <div className="home-item" onClick={() => handleclick(data.id)}>
-            <img
-              key={index}
-              className="home-item-cover"
-              src={data.cover}
-              alt={`${data.title} cover`}
-            />
-            <h3 className="titre">{data.title}</h3>
-          </div>
-        ))}
-    </div>
+    <Link className="home-item" to={"/accomodation/" + props.id}>
+      <img
+        className="home-item-cover"
+        src={props.image}
+        alt={`${props.title} cover`}
+      />
+      <h3 className="titre">{props.title}</h3>
+    </Link>
   );
 };
 
