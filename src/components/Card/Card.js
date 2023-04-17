@@ -1,22 +1,22 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import homeData from "../../data/home.json";
-import "./homeCard.css";
+import "./Card.css";
 
-const HomeCard = () => {
+const Card = () => {
   const navigate = useNavigate();
 
-  function handleclick() {
+  function handleclick(id) {
     navigate("/accomodation/" + id);
   }
 
   return (
     <div className="accomodations">
       {homeData &&
-        homeData.map((data, id) => (
-          <div className="home-item" onClick={handleclick}>
+        homeData.map((data, index) => (
+          <div className="home-item" onClick={() => handleclick(data.id)}>
             <img
-              key={id}
+              key={index}
               className="home-item-cover"
               src={data.cover}
               alt={`${data.title} cover`}
@@ -28,4 +28,4 @@ const HomeCard = () => {
   );
 };
 
-export default HomeCard;
+export default Card;
