@@ -16,7 +16,6 @@ const Accomodation = () => {
   if (!datas) {
     return <Error />;
   }
-
   //-----------------------------------------------------------------------------------
   //Création de la constante "équipemenent" pour récuperer le tableau des équipements et le gerer en liste
   const equipment = (

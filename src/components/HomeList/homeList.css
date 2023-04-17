@@ -4,10 +4,9 @@
     display: flex;
     justify-content: space-evenly;
 	flex-wrap: wrap;
-    margin-top: 35px; 
+    margin-top: 43px; 
     row-gap: 35px;
-    padding-top: 35px;
-
+    padding-top: 56px;
 }
 
 .home-item {

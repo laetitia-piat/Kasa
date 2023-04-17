@@ -38,8 +38,6 @@
         font-size: 22px;
        }
 }
-
-
 @media only screen and (max-width : 900px) {
     .textError {
         font-size: 200px;
@@ -52,9 +50,7 @@
        .lien {
         font-size: 18px;
        }
-
 }
-
 @media only screen and (max-width : 720px) {
     .textError {
         font-size: 96px;

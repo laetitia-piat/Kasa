@@ -29,7 +29,6 @@
         padding-left: 45px;
     }
 }
-
 @media only screen and (max-width : 900px) {
     .pointNav {
         font-size: 20px;
@@ -42,7 +41,6 @@
         padding: 30px 0 30px 0;
     }
 }
-
 @media only screen and (max-width : 720px) {
     .logo-kasa {
         max-width: 145px;

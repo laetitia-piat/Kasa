@@ -58,8 +58,6 @@
 
 .accTag {
     display: flex;
-    max-width: 1240px;
-    width: 100%;
     padding: 0;
 }
 
@@ -82,8 +80,6 @@
         font-size: 26px;
      }
 }
-
-
 @media only screen and (max-width : 720px) {
     .accTitle h2 {
         font-size: 18px;
@@ -99,6 +95,8 @@
     }
     .accTagsRating {
         flex-direction: row-reverse ;
+        width: 100%;
+        align-items: center;
     }
     .accHost img {
         width: 32px;
@@ -106,10 +104,6 @@
     }
     .accInfos {
         flex-direction: column;
-    }
-    .accTagsRating {
-        width: 100%;
-        align-items: center;
     }
     .accTagOne {
         width: 84px;
