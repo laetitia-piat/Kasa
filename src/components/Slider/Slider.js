@@ -38,7 +38,7 @@ const Slider = () => {
 
       {datas.pictures.map((picture, id) => {
         return (
-          <div className={id === current ? "slide active" : "slide"} key={id}>
+          <div key={id} className={id === current ? "slide active" : "slide"}>
             <img src={picture} alt="travel image" className="image" />
           </div>
         );

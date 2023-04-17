@@ -13,10 +13,10 @@ const HomeCard = () => {
   return (
     <div className="accomodations">
       {homeData &&
-        homeData.map((data) => (
+        homeData.map((data, id) => (
           <div className="home-item" onClick={handleclick}>
             <img
-              key={data.id}
+              key={id}
               className="home-item-cover"
               src={data.cover}
               alt={`${data.title} cover`}
