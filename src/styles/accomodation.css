@@ -9,7 +9,7 @@
     width: 45%;
     display: block;
 }
-.accInfos {
+.accInfosRating {
     display: flex;
 }
 .accTitle {
@@ -44,7 +44,7 @@
     justify-content: space-between;
 }
 
-.accTagsRating {
+.accHostRating {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,7 +93,7 @@
     .accomodationBody .collapseBodyOne {
         width: 100%;
     }
-    .accTagsRating {
+    .accHostRating {
         flex-direction: row-reverse ;
         width: 100%;
         align-items: center;
@@ -102,7 +102,7 @@
         width: 32px;
         height: 32px;
     }
-    .accInfos {
+    .accInfosRating {
         flex-direction: column;
     }
     .accTagOne {

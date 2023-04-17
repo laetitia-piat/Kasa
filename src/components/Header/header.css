@@ -5,7 +5,7 @@
 }
 .logo-kasa {
     width: 211px;
-    height: auto;
+    height: 100%;
 }
 
 .listNav {
@@ -48,5 +48,10 @@
     .pointNav  {
         font-size: 12px;
         padding-left: 10px;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .logo-kasa {
+        max-width: 100px;
     }
 }

@@ -40,13 +40,13 @@ const Accomodation = () => {
   return (
     <div className="accomodationBody">
       <Slider />
-      <div className="accInfos">
+      <div className="accInfosRating">
         <div className="accTitle">
           <h2>{datas.title}</h2>
           <p>{datas.location}</p>
           {tag}
         </div>
-        <div className="accTagsRating">
+        <div className="accHostRating">
           <p className="accHost">
             <span className="accName">{datas.host.name}</span>
             <img src={datas.host.picture} />
@@ -56,6 +56,7 @@ const Accomodation = () => {
           </span>
         </div>
       </div>
+      {/*------------------- PARTIE COLLAPSE--------------------------- */}
       <div className="collapse">
         <Collapse
           className="accCollapse"
