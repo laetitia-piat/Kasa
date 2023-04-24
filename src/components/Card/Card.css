@@ -65,10 +65,15 @@
 @media only screen and (max-width : 720px) {
     .accomodations {
         margin-top: 22px;
+        padding-top: 0px;
+        background: none;
        }
     .home-item {
-        width: 90%;
-    }  
+        width: 100%;
+    }
+    .home-item-cover {
+        height: 255px;
+    }
     .titre {
         font-size: 16px; 
      }

@@ -41,18 +41,9 @@
     .text-background  {
         font-size: 20px;
         width: 70%;
-        text-align: center;
+        text-align: left;
     }
-    .banner {
-        height: 160px;
-    }
-}
-@media only screen and (max-width : 480px) {
     .banner {
         height: 111px;
     }
-    .text-background {
-        text-align: left;
-    }
-
 }
