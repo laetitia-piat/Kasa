@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./collapse.css";
+import collapse from "../../assets/collapse.png";
 
 const Collapse = ({ title, content }) => {
   //creation du useState => pour l'ouverture et la fermeture du collapse > état de base > fermé
@@ -14,7 +15,9 @@ const Collapse = ({ title, content }) => {
       <div className="collapseTitle" onClick={handleClick}>
         <p className="collapseTxt">
           {title}
-          <span className="image-collapse"> </span>
+          <span className="image-collapse">
+            <img src={collapse} />
+          </span>
         </p>
       </div>
       <div className="collapseContent">{content}</div>

@@ -83,9 +83,19 @@
 @media only screen and (max-width : 720px) {
     .accTitle h2 {
         font-size: 18px;
+        padding-top: 15px;
+        margin: 0;
      }
     .accTitle {
         width: 100%;
+    }
+    .accTitle p {
+        padding: 5px 0px;
+        margin: 0;
+    }
+    .accTag {
+        padding: 5px 0px;
+        margin: 0;
     }
     .collapse {
        flex-direction: column;
@@ -93,8 +103,13 @@
     .accomodationBody .collapseBodyOne {
         width: 100%;
     }
+    .accHost {
+        width: 93px;
+        margin: 0;
+    }
     .accHostRating {
         flex-direction: row-reverse ;
+        padding-top: 16px;
         width: 100%;
         align-items: center;
     }
@@ -109,5 +124,8 @@
         width: 84px;
         height: 18px;
         font-size: 10px;
+    }
+    .accName {
+        font-size: 12px;
     }
    } 

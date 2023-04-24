@@ -10,7 +10,7 @@
 .collapseTitle {
     display: flex;
     width: auto;
-    height: 47px;
+    max-height: 47px;
     background-color:#FF6060;
     color: white ;
     margin-top: 31px;
@@ -42,12 +42,6 @@
     height: auto;
 }
 
-.image-collapse {
-    background :no-repeat center url(../../assets/collapse-close.png);
-    height: 14px;
-    width: 23px;
-}
-
 .open .image-collapse {
     transform: rotate(180deg);
 }
@@ -62,11 +56,14 @@
 }
 @media only screen and (max-width : 720px) {
     .collapseBodyOne {
-        font-size: 18px;
+        font-size: 13px;
     }
-}
-@media only screen and (max-width : 480px) {
-    .collapseBodyOne {
-        font-size: 14px;
+    .collapseTitle {
+        height : 30px;
+        margin-top: 20px;
     }
+    .image-collapse img {
+        width: 16px;
+    }
+
 }

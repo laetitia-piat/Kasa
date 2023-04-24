@@ -64,5 +64,10 @@
 @media only screen and (max-width : 720px) {
     .image {
         height: 255px ;
+        border-radius: 10px;
     }
+    .arrowR img , .arrowL img {
+        height: 20px;
+        width: 12px;
+}
 }
