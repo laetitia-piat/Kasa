@@ -53,10 +53,7 @@
     .listNav a {
         padding-left: 10px;
     }
-    
-}
-@media only screen and (max-width : 480px) {
-    .logo-kasa {
-        max-width: 100px;
+    .header {
+        padding: 20px 0 20px 0;
     }
 }
