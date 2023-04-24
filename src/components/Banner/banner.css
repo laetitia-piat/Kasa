@@ -23,6 +23,10 @@
     font-size: 48px;
     align-content: space-evenly;
 }
+.bannerAbout .banner img{
+    object-fit: cover;
+
+}
 
 @media only screen and (max-width : 1024px) {
     .text-background  {
@@ -49,4 +53,11 @@
     .bannerImage {
         border-radius: 10px;
     }
+    .bannerAbout .banner{
+        height: 223px;
+    }
+   .bannerAbout .banner img{
+        object-fit: cover;
+    
+   }
 }
