@@ -6,6 +6,7 @@ import Collapse from "../components/Collapse/Collapse";
 import AccStars from "../components/AccStars/AccStars";
 import Slider from "../components/Slider/Slider";
 import Error from "./Error";
+import AccTag from "../components/AccTag/AccTag";
 
 const Accomodation = () => {
   //Récupération de l'ID dans l'URL
@@ -25,18 +26,7 @@ const Accomodation = () => {
       ))}
     </ul>
   );
-  //-----------------------------------------------------------------------------------
-  //Création de la constante "tag" pour récuperer le tableau des tags et le gerer en liste
-  const tag = (
-    <ul className="accTag">
-      {datas.tags.map((tag, index) => (
-        <li key={index} className="accTagOne">
-          {tag}
-        </li>
-      ))}
-    </ul>
-  );
-  //---------------------------------------------------------------------------------------
+
   return (
     <div className="accomodationBody">
       <Slider />
@@ -44,8 +34,13 @@ const Accomodation = () => {
         <div className="accTitle">
           <h2>{datas.title}</h2>
           <p>{datas.location}</p>
-          {tag}
+          <div className="accTag">
+            {datas.tags.map((tag, index) => (
+              <AccTag key={index} tags={tag} />
+            ))}
+          </div>
         </div>
+
         <div className="accHostRating">
           <p className="accHost">
             <span className="accName">{datas.host.name}</span>
