@@ -65,7 +65,7 @@
 @media only screen and (max-width : 767px) {
     .accomodations {
         margin-top: 22px;
-        padding-top: 0px;
+        padding: 0px;
         background: none;
        }
     .home-item {

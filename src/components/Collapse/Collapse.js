@@ -13,12 +13,10 @@ const Collapse = ({ title, content }) => {
   return (
     <div className={`collapseBodyOne ${open && "open"}`}>
       <div className="collapseTitle" onClick={handleClick}>
-        <p className="collapseTxt">
-          {title}
-          <span className="image-collapse">
-            <img src={collapse} />
-          </span>
-        </p>
+        <p className="collapseTxt">{title}</p>
+        <span className="image-collapse">
+          <img src={collapse} />
+        </span>
       </div>
       <div className="collapseContent">{content}</div>
     </div>
