@@ -56,25 +56,6 @@
     padding: 0;
 }
 
-.accTag {
-    display: flex;
-    padding: 0;
-}
-
-.accTagOne {
-    width: 115px;
-    min-height: 25px;
-    text-align: center;
-    background:#FF6060 ;
-    color: white;
-    border-radius: 10px;
-    font-size: 13px;
-    margin-right: 10px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;    
-}
-
 @media only screen and (max-width : 900px) {
     .accTitle h2 {
         font-size: 26px;
@@ -90,10 +71,6 @@
         width: 100%;
     }
     .accTitle p {
-        padding: 5px 0px;
-        margin: 0;
-    }
-    .accTag {
         padding: 5px 0px;
         margin: 0;
     }
@@ -119,11 +96,6 @@
     }
     .accInfosRating {
         flex-direction: column;
-    }
-    .accTagOne {
-        width: 84px;
-        height: 18px;
-        font-size: 10px;
     }
     .accName {
         font-size: 12px;
