@@ -4,7 +4,7 @@
     justify-content: flex-end;
 }
 
-@media only screen and (max-width : 720px) { 
+@media only screen and (max-width : 767px) { 
     .accStars img{
         width: 13px;
         height: 13px;

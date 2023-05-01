@@ -41,7 +41,7 @@
         height: 200px;
     }
 }
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 767px) {
     .text-background  {
         font-size: 24px;
         width: 217px;

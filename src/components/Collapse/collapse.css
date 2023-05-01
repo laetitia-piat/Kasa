@@ -1,10 +1,10 @@
 .collapseBodyOne {
-    max-width: 1023px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 24px;
+    padding: 0 100px 0 100px;
 }
 
 .collapseTitle {
@@ -54,9 +54,10 @@
         padding : 20px 20px 10px 10px;
     }
 }
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 767px) {
     .collapseBodyOne {
         font-size: 13px;
+        padding: 0;
     }
     .collapseTitle {
         height : 30px;

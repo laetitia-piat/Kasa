@@ -61,7 +61,7 @@
         height: 340px ;
     }
 }
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 767px) {
     .image {
         height: 255px ;
         border-radius: 10px;

@@ -51,7 +51,7 @@
         font-size: 18px;
        }
 }
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 767px) {
     .textError {
         font-size: 96px;
         text-align: center;

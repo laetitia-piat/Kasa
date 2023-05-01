@@ -2,11 +2,11 @@
     border-radius: 25px;
     background: #F6F6F6;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 	flex-wrap: wrap;
     margin-top: 43px; 
     row-gap: 35px;
-    padding-top: 56px;
+    padding: 56px 56px 0 56px;
 }
 
 .home-item {
@@ -62,7 +62,7 @@
      }
 }
 
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 767px) {
     .accomodations {
         margin-top: 22px;
         padding-top: 0px;

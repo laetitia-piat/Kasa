@@ -61,7 +61,7 @@
         font-size: 26px;
      }
 }
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width : 767px) {
     .accTitle h2 {
         font-size: 18px;
         padding-top: 15px;
