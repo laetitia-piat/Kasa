@@ -5,7 +5,7 @@ import "../AccStars/accStars.css";
 
 const AccStars = (props) => {
   const starValue = props.starValue;
-  //Creation du tableau du nombre d'étoile
+  //Creation du tableau du nombre d'étoile totale
   const numberStar = [1, 2, 3, 4, 5];
 
   return (
