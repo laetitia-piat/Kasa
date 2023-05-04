@@ -10,8 +10,9 @@
 
 .listNav {
     display: flex;
+    align-items: center;
     padding: 0px;
-    margin: 0;
+    margin:0 ;
 }
 
 .listNav .active {
