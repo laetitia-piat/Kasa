@@ -59,3 +59,11 @@
         padding: 20px 0 20px 0;
     }
 }
+@media only screen and (max-width : 424px) {
+    .logo-kasa {
+        max-width: 110px;
+    }
+    .listNav a {
+        padding-left: 5px;
+    }
+}
