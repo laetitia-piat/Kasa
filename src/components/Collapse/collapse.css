@@ -61,7 +61,9 @@
 }
 @media only screen and (max-width : 767px) {
     .collapseBodyOne {
-        font-size: 13px;
+    font-size: 13px;
+    }
+    .bannerAbout .collapseBodyOne {
         padding: 0;
     }
     .collapseTitle {
