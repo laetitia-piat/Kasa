@@ -11,6 +11,7 @@
 .listNav {
     display: flex;
     padding: 0px;
+    margin: 0;
 }
 
 .listNav .active {
