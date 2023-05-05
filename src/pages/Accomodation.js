@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import homeData from "../data/home.json";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "../styles/accomodation.css";
 import Collapse from "../components/Collapse/Collapse";
 import AccStars from "../components/AccStars/AccStars";
@@ -11,17 +11,26 @@ import AccTag from "../components/AccTag/AccTag";
 const Accomodation = () => {
   //Récupération de l'ID dans l'URL
   let { id } = useParams();
-  //Récupération des données avec l'import et comparaison des id
-  let datas = homeData.find((element) => element.id === id);
-  //Si données différentes > renvoi vers la page erreur
-  if (!datas) {
+
+  //creation du useState => pour stocker infos logement trouvé par son id
+  const [accomodation, setAccomodation] = useState(null);
+
+  useEffect(() => {
+    //Récupération des données avec l'import et comparaison des id
+    let accomodationFind = homeData.find((element) => element.id === id);
+    //on modifie le state, si le state a changé, le composant est re-renders
+    setAccomodation(accomodationFind);
+  }, [id]);
+
+  if (!accomodation) {
     return <Error />;
   }
+
   //-----------------------------------------------------------------------------------
   //Création de la constante "équipemenent" pour récuperer le tableau des équipements et le gerer en liste
   const equipment = (
     <ul className="accEquipment">
-      {datas.equipments.map((equipment, index) => (
+      {accomodation.equipments.map((equipment, index) => (
         <li key={index}>{equipment}</li>
       ))}
     </ul>
@@ -32,10 +41,10 @@ const Accomodation = () => {
       <Slider />
       <div className="accInfosRating">
         <div className="accTitle">
-          <h2>{datas.title}</h2>
-          <p>{datas.location}</p>
+          <h2>{accomodation.title}</h2>
+          <p>{accomodation.location}</p>
           <div className="accTag">
-            {datas.tags.map((tag, index) => (
+            {accomodation.tags.map((tag, index) => (
               <AccTag key={index} tags={tag} />
             ))}
           </div>
@@ -43,11 +52,11 @@ const Accomodation = () => {
 
         <div className="accHostRating">
           <p className="accHost">
-            <span className="accName">{datas.host.name}</span>
-            <img src={datas.host.picture} />
+            <span className="accName">{accomodation.host.name}</span>
+            <img src={accomodation.host.picture} />
           </p>
           <span className="accStars">
-            <AccStars starValue={datas.rating} />
+            <AccStars starValue={accomodation.rating} />
           </span>
         </div>
       </div>
@@ -56,7 +65,7 @@ const Accomodation = () => {
         <Collapse
           className="accCollapse"
           title="Description"
-          content={datas.description}
+          content={accomodation.description}
         />
         <Collapse
           className="accCollapse"
