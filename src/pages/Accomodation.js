@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import homeData from "../data/home.json";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "../styles/accomodation.css";
 import Collapse from "../components/Collapse/Collapse";
 import AccStars from "../components/AccStars/AccStars";
