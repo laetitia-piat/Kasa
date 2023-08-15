@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://laetitia-piat.github.io/Kasa/",
   "scripts":{
-    //...
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }
