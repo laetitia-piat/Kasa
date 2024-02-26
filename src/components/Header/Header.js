@@ -6,7 +6,9 @@ import "./header.css";
 const Header = () => {
   return (
     <div className="header">
+      <NavLink to="/Kasa">
       <img className="logo-kasa" src={logo} alt="logo Kasa"></img>
+      </NavLink>
       <ul className="listNav">
         <NavLink to="/Kasa">
           <li className="pointNav"> Accueil </li>
